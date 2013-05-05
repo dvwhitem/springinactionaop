@@ -5,7 +5,9 @@ package com.springinaction.springidolaop;
  *
  * @author dv
  */
-public class Audience {
+public class Audience implements Performer {
+    
+    public Audience() {}
 
     public void takeSeats() { // Перед выступлением
         System.out.println("The audience is taking their seats.");
@@ -21,5 +23,9 @@ public class Audience {
     
     public void demandRefund() { // После неудачного выступления
         System.out.println("Boo! We want our money back!");
+    }
+
+    @Override
+    public void perform() throws PerformanceException {
     }
 }
