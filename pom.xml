@@ -127,7 +127,7 @@
         </dependency>
         <dependency>
             <groupId>aspectj</groupId>
-            <artifactId>aspectjtools</artifactId>
+            <artifactId>aspectjweaver</artifactId>
             <version>1.5.3</version>
         </dependency>
         <dependency>

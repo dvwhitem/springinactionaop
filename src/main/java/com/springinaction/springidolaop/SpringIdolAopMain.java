@@ -14,8 +14,9 @@ public class SpringIdolAopMain {
         ApplicationContext ctx = 
                 new ClassPathXmlApplicationContext("com/springinaction/springidolaop/spring-idol.xml");
         
-        Performer performer = (Performer) ctx.getBean("audience");
+        //Performer performer = (Performer) ctx.getBean("audience");
+       CriticismEngine criticismEngine = (CriticismEngine) ctx.getBean("criticismEngine");
         
-       performer.perform();
+       criticismEngine.getCriticism();
     }
 }
